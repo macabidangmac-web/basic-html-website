@@ -1,6 +1,6 @@
 # Basic HTML Website
 
-A simple multi-page website built using only HTML for the [roadmap.sh Basic HTML Website](https://roadmap.sh/projects/basic-html-website) project.
+A simple multi-page website built using only HTML for the [roadmap.sh Basic HTML Website and Portfolio](https://roadmap.sh/projects/basic-html-website | https://roadmap.sh/projects/portfolio-website) project.
 
 ## Overview
 
