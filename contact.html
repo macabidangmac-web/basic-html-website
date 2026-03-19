@@ -6,54 +6,48 @@
     <title>Mark | Contact</title>
     <meta
       name="description"
-      content="Contact Mark through this HTML-only contact page."
+      content="Contact Mark through this portfolio website."
     />
-    <meta
-      name="keywords"
-      content="HTML, contact, frontend, portfolio"
-    />
-    <meta name="author" content="Mark" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Mark</h1>
-      <nav aria-label="Main navigation">
-        <a href="index.html">Home</a> /
-        <a href="projects.html">Projects</a> /
-        <a href="articles.html">Articles</a> /
-        <a href="contact.html">Contact</a>
+    <header class="site-header">
+      <div class="logo-name">
+        <div class="logo" aria-hidden="true"></div>
+        <p>Mark</p>
+      </div>
+
+      <nav aria-label="Main navigation" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="articles.html">Articles</a>
+        <a href="contact.html" aria-current="page">Contact</a>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h2>Contact Me</h2>
+    <main class="inner-page">
+      <section class="page-intro">
+        <h1>Contact</h1>
         <p>Feel free to send me a message using the form below.</p>
+      </section>
 
-        <form action="#" method="post">
-          <p>
-            <label for="name">Name:</label><br />
-            <input type="text" id="name" name="name" required />
-          </p>
+      <section class="form-section">
+        <form class="contact-form" action="#" method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
 
-          <p>
-            <label for="email">Email:</label><br />
-            <input type="email" id="email" name="email" required />
-          </p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
 
-          <p>
-            <label for="message">Message:</label><br />
-            <textarea id="message" name="message" rows="6" cols="30" required></textarea>
-          </p>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
 
-          <p>
-            <button type="submit">Send Message</button>
-          </p>
+          <button type="submit">Send Message</button>
         </form>
       </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p>&copy; 2026 Mark. All rights reserved.</p>
     </footer>
   </body>

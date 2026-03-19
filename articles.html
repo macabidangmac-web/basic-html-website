@@ -8,46 +8,48 @@
       name="description"
       content="Articles and learning notes by Mark about frontend development."
     />
-    <meta
-      name="keywords"
-      content="HTML, articles, frontend, learning"
-    />
-    <meta name="author" content="Mark" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Mark</h1>
-      <nav aria-label="Main navigation">
-        <a href="index.html">Home</a> /
-        <a href="projects.html">Projects</a> /
-        <a href="articles.html">Articles</a> /
+    <header class="site-header">
+      <div class="logo-name">
+        <div class="logo" aria-hidden="true"></div>
+        <p>Mark</p>
+      </div>
+
+      <nav aria-label="Main navigation" class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="articles.html" aria-current="page">Articles</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h2>Articles</h2>
-        <p>Here are some topics I am learning and writing about.</p>
+    <main class="inner-page">
+      <section class="page-intro">
+        <h1>Articles</h1>
+        <p>Thoughts and learning notes from my frontend development journey.</p>
+      </section>
 
-        <article>
-          <h3>Why Semantic HTML Matters</h3>
-          <p>Understanding how semantic tags improve structure, readability, and accessibility.</p>
+      <section class="content-grid">
+        <article class="info-card">
+          <h2>Why Semantic HTML Matters</h2>
+          <p>How semantic tags improve structure, accessibility, and maintainability.</p>
         </article>
 
-        <article>
-          <h3>How to Build a Multi-Page Website</h3>
-          <p>Learning how separate HTML pages connect through navigation and consistent layout.</p>
+        <article class="info-card">
+          <h2>How to Build a Multi-Page Website</h2>
+          <p>Understanding page flow, shared navigation, and consistent layout.</p>
         </article>
 
-        <article>
-          <h3>Getting Better at Frontend Fundamentals</h3>
-          <p>Practicing HTML, page organization, and form structure through small projects.</p>
+        <article class="info-card">
+          <h2>Getting Better at Frontend Fundamentals</h2>
+          <p>Practicing structure, spacing, forms, and responsive design through small projects.</p>
         </article>
       </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p>&copy; 2026 Mark. All rights reserved.</p>
     </footer>
   </body>

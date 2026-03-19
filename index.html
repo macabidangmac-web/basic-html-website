@@ -6,72 +6,107 @@
     <title>Mark | Frontend Developer</title>
     <meta
       name="description"
-      content="A basic multi-page HTML website built using only HTML."
+      content="Personal portfolio website of Mark, a frontend developer."
     />
-    <meta
-      name="keywords"
-      content="HTML, basic website, semantic HTML, portfolio"
-    />
-    <meta name="author" content="Mark" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Mark</h1>
-      <nav aria-label="Main navigation">
-        <a href="index.html">Home</a> /
-        <a href="projects.html">Projects</a> /
-        <a href="articles.html">Articles</a> /
+    <header class="site-header">
+      <div class="logo-name">
+        <div class="logo" aria-hidden="true"></div>
+        <p>Mark</p>
+      </div>
+
+      <nav aria-label="Main navigation" class="site-nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="articles.html">Articles</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
 
     <main>
-      <section>
-        <h2>Frontend Developer</h2>
-        <p>HTML only website with proper semantic layout and no styling yet.</p>
+      <section class="hero">
+        <h1>Frontend Developer</h1>
+        <p>Building clean, responsive, and accessible web interfaces.</p>
       </section>
 
-      <section>
-        <h2>Projects</h2>
-        <ul>
-          <li>HTML Only Portfolio</li>
-          <li>Calculator</li>
-          <li>Quiz App</li>
-          <li>Countdown Timer</li>
-          <li>Product Upcoming Page</li>
-        </ul>
+      <section class="home-grid">
+        <section class="card projects">
+          <h2>Projects</h2>
+          <ul>
+            <li>HTML Only Portfolio</li>
+            <li>Calculator</li>
+            <li>Quiz App</li>
+            <li>Countdown Timer</li>
+            <li>Product Upcoming Page</li>
+          </ul>
+        </section>
+
+        <section class="card experience">
+          <h2>Work Experience</h2>
+
+          <article>
+            <h3>roadmap.sh</h3>
+            <p>Solved all the frontend projects</p>
+            <a href="https://roadmap.sh">Visit my Profile</a>
+          </article>
+
+          <article>
+            <h3>Open Source Work</h3>
+            <p>
+              Contributed to 50 opensource projects. Made my own projects with
+              200 GitHub Stars.
+            </p>
+            <a href="projects.html">View My Projects</a>
+          </article>
+        </section>
+
+        <section class="card education">
+          <h2>Education</h2>
+          <p>
+            Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30
+            sessions.
+          </p>
+
+          <p>Courses I took:</p>
+          <ul>
+            <li>Object Oriented Programming</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Web Engineering</li>
+            <li>Artificial Intelligence</li>
+            <li>Human Computer Interaction</li>
+            <li>Computer Graphics</li>
+            <li>Database Management Systems</li>
+            <li>Distributed Database Systems</li>
+            <li>Discrete Mathematics</li>
+          </ul>
+        </section>
       </section>
 
-      <section>
-        <h2>Work Experience</h2>
+      <section class="reviews">
+        <h2>Reviews from my Teachers</h2>
 
-        <article>
-          <h3>roadmap.sh</h3>
-          <p>Solved frontend projects and practiced structured HTML.</p>
-          <p><a href="https://roadmap.sh">Visit roadmap.sh</a></p>
-        </article>
+        <div class="review-list">
+          <article class="review-card">
+            <p>John doe was a brilliant student; always stood out with his assignments.</p>
+            <p class="reviewer">Jane Doe<br />Assistant Professor</p>
+          </article>
 
-        <article>
-          <h3>Open Source Work</h3>
-          <p>Contributed to projects and built personal practice work.</p>
-          <p><a href="projects.html">View my projects</a></p>
-        </article>
-      </section>
+          <article class="review-card">
+            <p>John doe was a brilliant student; always stood out with his assignments.</p>
+            <p class="reviewer">Jane Doe<br />Assistant Professor</p>
+          </article>
 
-      <section>
-        <h2>Education</h2>
-        <p>Focused on building strong frontend development fundamentals through practice and projects.</p>
-        <ul>
-          <li>Semantic HTML</li>
-          <li>Page structure</li>
-          <li>Navigation</li>
-          <li>Forms</li>
-          <li>Accessibility basics</li>
-        </ul>
+          <article class="review-card">
+            <p>John doe was a brilliant student; always stood out with his assignments.</p>
+            <p class="reviewer">Jane Doe<br />Assistant Professor</p>
+          </article>
+        </div>
       </section>
     </main>
 
-    <footer>
+    <footer class="site-footer">
       <p>&copy; 2026 Mark. All rights reserved.</p>
     </footer>
   </body>
